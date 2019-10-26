@@ -122,7 +122,7 @@ describe("basics", function() {
             // written in way that we don't have to write all the zeros BEFORE the point.
             // Write it as a string so that the .length property can be checked.
             // ✏️ EDIT NEXT LINE ✏️
-            parseFloat (someNumber) = ("0.2");
+            const someNumber = (".2");
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof someNumber).to.equal("string");
@@ -135,7 +135,9 @@ describe("basics", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-       
+             const object = {
+                 someProperty:1
+             };
             ////////////////////////////////////////////////////////////////////
 
             expect(object instanceof Object).to.equal(true);
@@ -151,7 +153,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-           
+             object.someProperty = undefined;
             ////////////////////////////////////////////////////////////////////
 
             // object.someProperty is undefined...
@@ -170,7 +172,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+             delete object.someProperty;
             ////////////////////////////////////////////////////////////////////
 
             // object.someProperty is undefined...
@@ -187,7 +189,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+            
             ////////////////////////////////////////////////////////////////////
 
             expect(secondArray).to.eql([1, 2, 3]);
