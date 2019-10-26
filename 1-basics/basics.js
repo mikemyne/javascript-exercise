@@ -189,7 +189,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            
+            const secondArray = firstArray;
             ////////////////////////////////////////////////////////////////////
 
             expect(secondArray).to.eql([1, 2, 3]);
@@ -211,7 +211,8 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
             // ✏️ ADD CODE HERE ✏️
-
+            firstArray.push(4);
+            console.log(firstArray);
             ////////////////////////////////////////////////////////////////////
 
             expect(firstArray).to.eql([1, 2, 3]);
@@ -232,7 +233,8 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
             // ✏️ ADD CODE HERE ✏️
-
+            var longArray = new Array(100);
+            console.log(longArray.length);
             ////////////////////////////////////////////////////////////////////
 
             expect(longArray).to.be.instanceOf(Array);
@@ -249,7 +251,8 @@ describe("basics", function() {
             // By observing their casting behavior in the tests below, you can find
             // out the required types.
             // ✏️ ADD CODE HERE ✏️
-
+             const firstVariable = 1 + 2;
+             const secondVariable = "1";
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof firstVariable).to.equal("number");
@@ -266,7 +269,7 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a string that casts to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
-
+            
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyString).to.equal("string");
