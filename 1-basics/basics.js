@@ -269,7 +269,10 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a string that casts to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
-            
+            const falsyString = "";
+            if(falsyString){
+                console.log("falsyString is not falsy")
+            };
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyString).to.equal("string");
