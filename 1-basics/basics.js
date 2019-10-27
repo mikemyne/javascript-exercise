@@ -213,6 +213,8 @@ describe("basics", function() {
             // ✏️ ADD CODE HERE ✏️
             firstArray.push(4);
             console.log(firstArray);
+            const secondArray = [...firstArray];
+            console.log(secondArray);
             ////////////////////////////////////////////////////////////////////
 
             expect(firstArray).to.eql([1, 2, 3]);
@@ -289,7 +291,15 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find two different numbers that each cast to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
-
+             var falsyNumber1 = 1;
+             var falsyNumber2 = 2.0;
+             (falsyNumber1 === falsyNumber2); 
+             if (falsyNumber1){
+                 console.log("falsyNumber1 is not falsy")
+             };
+             if (falsyNumber2){
+                 console.log("falsyNumber2 is not falsy")
+             };
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyNumber1).to.equal("number");
@@ -313,7 +323,10 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a value that is typeof "object" but also casts to `false`?
             // ✏️ ADD CODE HERE ✏️
-
+            var falsyThing = null;
+            if(falsyThing){
+                console.log("falsyThing is not falsy")
+            };
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyThing).to.equal("object");
@@ -343,7 +356,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+             
             ////////////////////////////////////////////////////////////////////
 
             // That's the same property access as above, but now we get back
@@ -358,7 +371,7 @@ describe("basics", function() {
             // You can create objects that reference themselves.
             // But you need two steps to do it.
             // ✏️ ADD CODE HERE ✏️
-
+             
             ////////////////////////////////////////////////////////////////////
 
             expect(object.object).to.equal(object);
