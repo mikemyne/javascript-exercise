@@ -211,10 +211,8 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
             // ✏️ ADD CODE HERE ✏️
-            firstArray.push(4);
-            console.log(firstArray);
-            const secondArray = [...firstArray];
-            console.log(secondArray);
+            const secondArray = Array.of(...firstArray);
+
             ////////////////////////////////////////////////////////////////////
 
             expect(firstArray).to.eql([1, 2, 3]);
