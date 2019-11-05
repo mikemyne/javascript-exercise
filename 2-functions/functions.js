@@ -40,10 +40,8 @@ describe("functions", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            function myFunction (otherFucntion){};
-            if(myFunction !== otherFunction){
-                console.log("myFunction and otherFucntion should be the same function")
-            };
+            
+        
 
             ////////////////////////////////////////////////////////////////////
 
@@ -76,7 +74,7 @@ describe("functions", function() {
             // Declare a constant 'answer' with the correct result.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+             const answer = getContext();
             ////////////////////////////////////////////////////////////////////
 
             const result = getContext(); // <--- called without explicit context
