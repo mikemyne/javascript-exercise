@@ -12,7 +12,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function isFiniteNumber(number){
+                return Number.isFinite(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(isFiniteNumber(0)).to.equal(true);
@@ -53,7 +55,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function roundNumber(number){
+                return Math.round(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -67,7 +71,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function roundNumber(number){
+                return Math.floor(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -81,7 +87,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+             function roundNumber(number){
+                 return Math.ceil(number);
+             }
             ////////////////////////////////////////////////////////////////////////
 
             expect(roundNumber(0)).to.equal(0);
@@ -123,7 +131,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function getRandomNumberBetween0And1(number){
+                return Math.random(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             const previousNumbers = [];
@@ -164,7 +174,9 @@ describe("numbers", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function toInteger(number){
+                return Number.parseInt(number);
+            }
             ////////////////////////////////////////////////////////////////////////
 
             expect(toInteger("0")).to.equal(0);

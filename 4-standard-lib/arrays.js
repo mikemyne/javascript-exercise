@@ -12,7 +12,9 @@ describe("arrays", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function getNumberOfItems(array){
+                return array.length;
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(getNumberOfItems([])).to.equal(0);
@@ -28,7 +30,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+             function removeLastItem(){
+                 return array.pop();
+             }
             ////////////////////////////////////////////////////////////////////
 
             expect(removeLastItem()).to.equal("d");
@@ -76,7 +80,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+           function removeFirstItem(){
+               return array.shift();
+           }
             ////////////////////////////////////////////////////////////////////
 
             expect(removeFirstItem()).to.equal("a");
@@ -142,7 +148,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+             function backwards(){
+                 return array.reverse();
+             }
             ////////////////////////////////////////////////////////////////////
 
             backwards();
@@ -158,7 +166,9 @@ describe("arrays", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB, NO LOOPS! ✏️
-
+            function sortAlphabetically(){
+                return array.sort();
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(sortAlphabetically()).to.equal(array);

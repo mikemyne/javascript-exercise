@@ -289,15 +289,8 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find two different numbers that each cast to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
-             var falsyNumber1 = 1;
-             var falsyNumber2 = 2.0;
-             (falsyNumber1 === falsyNumber2); 
-             if (falsyNumber1){
-                 console.log("falsyNumber1 is not falsy")
-             };
-             if (falsyNumber2){
-                 console.log("falsyNumber2 is not falsy")
-             };
+             const falsyNumber1 = 0;
+             const falsyNumber2 = NaN;
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyNumber1).to.equal("number");
@@ -354,7 +347,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-             
+             propertyName = "secondProperty";
             ////////////////////////////////////////////////////////////////////
 
             // That's the same property access as above, but now we get back
@@ -369,7 +362,8 @@ describe("basics", function() {
             // You can create objects that reference themselves.
             // But you need two steps to do it.
             // ✏️ ADD CODE HERE ✏️
-             
+             const object ={};
+             object.object = object;
             ////////////////////////////////////////////////////////////////////
 
             expect(object.object).to.equal(object);

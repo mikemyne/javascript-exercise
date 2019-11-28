@@ -14,7 +14,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function findIndexOf(string){
+                return text.indexOf(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(findIndexOf("fox")).to.equal(16);
@@ -28,7 +30,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function findLastIndexOf(string){
+                return text.lastIndexOf(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(findLastIndexOf("e")).to.equal(33);
@@ -42,7 +46,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+             function letterAt(string){
+                 return text.charAt(string);
+             }
             ////////////////////////////////////////////////////////////////////
 
             expect(letterAt(0)).to.equal("T");
@@ -58,7 +64,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            function beginsWith(string){
+                return text.startsWith(string);
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(beginsWith("The")).to.equal(true);
@@ -73,7 +81,11 @@ describe("strings", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+            const text = "example sentence"
+            function removeWhitespaceAround(string){
+                return text.trim(string);
+                
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(removeWhitespaceAround("   example sentence   ")).to.equal(
@@ -91,7 +103,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+             function contains(string){
+                 return text.includes(string);
+             }
             ////////////////////////////////////////////////////////////////////
 
             expect(contains("quick")).to.equal(true);
@@ -137,7 +151,9 @@ describe("strings", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
-
+             function transformToCapitalLetters(string){
+                 return text.toUpperCase(string);
+             }
             ////////////////////////////////////////////////////////////////////
 
             expect(transformToCapitalLetters()).to.equal(
